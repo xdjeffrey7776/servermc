@@ -1,0 +1,16 @@
+:main
+a_name ReinstalarNgrok
+a_version 1.0
+a_author JustinBV_
+
+:button reinstalar_ngrok
+text Instalar ngrok
+cls
+say Reinstalando ngrok...
+exec wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+exec sudo tar xvzf ./ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
+exec rm ./ngrok-v3-stable-linux-amd64.tgz
+cls
+say ngrok reinstalado.
+pause
+
